@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yabi Split Bill</title>
+<style>
+  :root { --bg:#111418; --card:#1b2027; --line:#2c333d; --fg:#e8ecf1; --mute:#8b96a5; --acc:#4cc38a; --warn:#e5a94b; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.45 -apple-system,system-ui,sans-serif; }
+  main { max-width:640px; margin:0 auto; padding:16px; }
+  h1 { font-size:20px; margin:0 0 12px; }
+  h2 { font-size:16px; margin:0 0 8px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:12px; margin-bottom:12px; }
+  label { display:block; font-size:13px; color:var(--mute); margin:8px 0 4px; }
+  input[type=text], input[type=number], select { width:100%; padding:10px; font-size:16px; background:var(--bg); color:var(--fg); border:1px solid var(--line); border-radius:8px; }
+  .row { display:flex; gap:8px; } .row > * { flex:1; }
+  .chips { display:flex; flex-wrap:wrap; gap:6px; }
+  .chip { display:inline-flex; align-items:center; gap:6px; padding:6px 10px; background:var(--bg); border:1px solid var(--line); border-radius:999px; font-size:14px; color:var(--fg); margin:0; }
+  .chip input { margin:0; width:18px; height:18px; }
+  button { padding:10px 14px; font-size:15px; background:var(--line); color:var(--fg); border:0; border-radius:8px; cursor:pointer; }
+  button.primary { background:var(--acc); color:#07130c; font-weight:600; }
+  button.danger { background:transparent; color:var(--warn); padding:4px 8px; }
+  .actions { display:flex; flex-wrap:wrap; gap:8px; margin:12px 0; }
+  .big { font-size:28px; font-weight:700; color:var(--acc); }
+  .mute { color:var(--mute); font-size:14px; }
+  .line { display:flex; justify-content:space-between; padding:6px 0; border-bottom:1px solid var(--line); }
+  .line:last-child { border-bottom:0; }
+  .note { color:var(--warn); font-size:13px; }
+  .inline { display:flex; align-items:center; gap:8px; margin:8px 0 0; color:var(--fg); font-size:15px; }
+  .inline input { width:20px; height:20px; margin:0; }
+</style>
+</head>
+<body>
+<main id="app"></main>
+<script src="lz-string.min.js"></script>
+<script type="module" src="app.js"></script>
+</body>
+</html>

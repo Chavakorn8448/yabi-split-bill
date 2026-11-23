@@ -1,0 +1,1 @@
+{ "name": "yabi-split-bill", "private": true, "type": "module", "scripts": { "test": "node --test", "start": "npx serve ." } }
