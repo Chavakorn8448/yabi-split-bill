@@ -14,4 +14,4 @@ npm test                      # money-math tests
 ```
 
 ## Live
-URL: see the repo description (Vercel production).
+https://yabi-split-bill.vercel.app
